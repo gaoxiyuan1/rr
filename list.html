@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>商品选择</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      html,body{
+     width:100%;
+       height:100%;
+       margin:0px;
+      }
+   .back{
+    background-image: url(img/background.png);
+             
+   }
+      .head{
+       width:100%;
+       display:flex;
+       flex-direction:row;
+       justify-content:center;
+      }
+      .head div{
+       width:337px;
+       line-height:80px;
+       text-align:center;
+         color:#000093;
+        }
+		
+        .content{
+         margin:0 auto;
+         width:80%;
+         height:80%;
+         display:flex;
+         flex-direction:column;
+        }
+        .lines{
+			width:100%;
+         display:flex;
+         flex-direction:row;
+      }
+      .lines div{
+       flex-grow:1;
+       display:flex;
+       align-items:center;
+       justify-content:center;
+      }
+      .lines div img{
+       width:89%;
+       height:89%;
+      }
+      
+    </style>
+  </head>
+  <body class="back">
+   <div class="head">
+         <div style="font-size:30px">选 择 要 购 买 的 商 品</div>
+       </div> 
+   <div class="content">
+      <div class="lines">
+        <div><a href="buy.html"><img src="img/wine.png"></div>
+        <div><a href="buy.html"><img src="img/noodle.png" /></div>
+        <div><a href="buy.html"><img src="img/bar.png" /></div>
+      </div>
+      <div class="lines">
+        <div><a href="buy.html"><img src="img/beer.png" /></div>
+        <div><a href="buy.html"><img src="img/place.png" /></div>
+        <div><a href="buy.html"><img src="img/coffee.png" /></div>
+      </div>
+   
+       </div>
+       
+     </body>
+   </html>

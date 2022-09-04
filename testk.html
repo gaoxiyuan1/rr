@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>小测验</title>
+  <style type = "text/css">
+  *{
+   margin : 0;
+   padding: 0;
+   overflow: hidden;
+   }
+  body{
+  	background-size: 100% 100%;
+  	background-image: url(img/background.png);
+  	background-attachment: fixed;
+  }
+  .image{
+      position: absolute;
+      top: 4vh;
+      left: 41vw;
+      width: 111vh;
+      height: 30vw;
+  }
+   .image2{
+    position: absolute;
+	top: 27vh;
+	left: 7vw;
+	width: 37vh;
+	height: 33vw;
+    }
+    .next{
+        position: absolute;
+        top: 80vh;
+        left: 80vw;
+        width: 16vh;
+        height: 5vw;
+    }
+    .image02{
+        position: absolute;
+        top: 52vh;
+        left:55vw;
+        width: 10vh;
+        height: 5vw;;
+        
+    }
+    .image03{
+        position: absolute;
+        top: 52vh;
+        left:75vw;
+        width: 10vh;
+        height: 5vw;;
+      
+    }
+    .try{
+     position: absolute;
+     top:7vh;
+     left:23vw;
+     width: 37vh;
+     height: 17vw;
+    }
+    .win{
+    position: absolute;
+    top:7vh;
+    left:23vw;
+    width: 37vh;
+    height: 17vw;
+      opacity: 0;
+    }
+    .again{
+     position: absolute;
+     top:7vh;
+     left:23vw;
+     width: 37vh;
+     height: 17vw;
+       opacity: 0;
+    }
+  </style>
+  </head>
+   <body class="body">
+   <img class="image" src="img/blackboard01.png">
+   <img class="image2" src="img/police.png">
+   <img class="image02" src="img/wrong.png">
+   <img class="image03" src="img/right.png">
+   <img class="try" src="img/try.png">
+   <img class="again" src="img/again.png">
+   <img class="win" src="img/win.png">
+   <a href="tipk.html"><img class="next" src="img/icons.png"></a>
+   </body>
+   <script type="text/javascript">
+   var wrong1=document.querySelector(".image02") ;
+   var right1=document.querySelector(".image03") ;
+   var go=document.querySelector(".try") ;
+   var defeat=document.querySelector(".again") ;
+   var victory= document.querySelector(".win");
+   wrong1.addEventListener('click',function(){
+    go.style.opacity=0;
+    defeat.style.opacity=0;
+    victory.style.opacity=1;
+    
+   })   
+   right1.addEventListener('click',function(){
+    go.style.opacity=0;
+    defeat.style.opacity=1;
+    victory.style.opacity=0;
+   }) 
+   
+   </script>
+  </html>
